@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Help us serve you better</p>
+    <form id="survey-form" action="">
+        <!-- personal details -->
+        <section id="first">
+            <label id="name-label" for="name">Name: <input placeholder="Please enter your name" type="text" id="name" required></label> 
+            <label id="email-label" for="email">Email: <input placeholder="Please enter your email" type="email" id="email" required></label>
+            <label id="number-label" for="=number">Age(optional): <input placeholder="Please enter your age between 18 and 40" type="number" id="number" min="18" max="40"></label>
+            <label for="dropdown">Which option best describes your current role?
+                <select name="" id="dropdown">
+                    <option value="select">Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="professional">professional</option>
+                </select>
+            </label>
+        </section>
+
+        <!-- radio btn -->
+        <section id="second">
+            <p>Would you recommend us to a friend?</p>
+            <input value="Definitely" type="radio" name="recommend" id="Definitely"><label for="Definitely">Definitely</label>
+            <input value="Maybe" type="radio" name="recommend" id="Maybe"><label for="Maybe">Maybe</label>
+            <input value="Sure" type="radio" name="recommend" id="Sure"><label for="Sure">Sure</label>
+           
+            <p>What would you like to see improved?</p>
+            <input type="checkbox" name="checkbox" value="Front-end Projects" id="1"><label for="1">Front-end Projects</label>
+            <input type="checkbox" name="checkbox" value="Back-end Projects" id="2"><label for="2">Back-end Projects</label>
+            <input type="checkbox" name="checkbox" value="Data Visualisation" id="3"><label for="3">Data Visualisation</label>
+            <input type="checkbox" name="checkbox" value="Challenges" id="4"><label for="4">Challenges</label>
+            <input type="checkbox" name="checkbox" value="Forum" id="5"><label for="5">Forum</label>
+        </section>
+
+        <!-- suggestion and submit btn -->
+        <section id="third">
+            <p>Any comments or suggestion?</p>
+            <textarea placeholder="Enter yur comment here" name="suggestion" id="" cols="40" rows="6"></textarea>
+            <input type="submit" name="submit" id="submit">
+        </section>
+    </form>
+</body>
+</html>
